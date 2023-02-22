@@ -21,7 +21,7 @@ E_PULSE = 0.0005
 E_DELAY = 0.0005
 
 # pihole = ph.Pihole(socket.gethostbyname(socket.gethostname()))
-pihole = ph.Pihole("192.168.1.84")
+pihole = ph.PiHole("192.168.1.84")
 
 
 def lcd_send_byte(bits, mode):
