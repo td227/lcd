@@ -106,6 +106,8 @@ if __name__ == '__main__':
     msg2 = socket.gethostname()
     lcd_char_message(msg1, msg2)
     time.sleep(2)
-    lcd_char_message("IP:", socket.gethostbyname(socket.gethostname()))
+    hostname = socket.gethostname()
+    ip_address = socket.gethostbyname(hostname)
+    lcd_char_message("IP:", ip_address)
 
     GPIO.cleanup()
