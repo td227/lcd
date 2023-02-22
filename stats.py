@@ -96,7 +96,7 @@ def lcd_char_message(msg1, msg2):
 def display_stats():
     while (True):
         lcd_char_message(
-            "Status: " + pihole.status, "{0} Clients Connected".format(pihole.total_clients))
+            "Status: " + pihole.status, "Clients: " + pihole.total_clients)
         time.sleep(5)
         lcd_char_message(
             "Queries: " + pihole.queries, "Blocked: " + pihole.blocked)
